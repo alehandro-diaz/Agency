@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, regular;
+  color: white;
+}
+body nav {
+  height: 60px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body nav .h1 {
+  display: flex;
+  align-items: center;
+}
+body nav h1 {
+  font-family: Inter, bold;
+  color: black;
+  margin: 0;
+  padding-left: 10px;
+  font-size: 18.6px;
+}
+body nav .container {
+  display: flex;
+  align-items: center;
+}
+body nav .container a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #4F5968;
+  margin-right: 20px;
+}
+body nav .container button {
+  background-color: #155DFC;
+  border-radius: 10px;
+  text-align: center;
+  width: 128px;
+  height: 40px;
+  border-style: none;
+}
+body nav .container button a {
+  color: white;
+  font-size: 14.6px;
+  margin-right: 0px;
+}
+body .greeting {
+  height: 600px;
+  background: linear-gradient(to right, #1C398E, #1447E6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .greeting .container_greeting {
+  display: flex;
+  flex-direction: column;
+}
+body .greeting .container_greeting h2 {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 58.6px;
+  font-family: Inter, Medium;
+}
+body .greeting .container_greeting p {
+  font-size: 22.1;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+body .greeting .container_greeting .buttons .butt1 {
+  background-color: #155DFC;
+  border-radius: 10px;
+  color: #FFFFFF;
+  border-style: none;
+  height: 56px;
+  width: 144px;
+  margin-right: 15px;
+}
+body .greeting .container_greeting .buttons .butt2 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  color: #155DFC;
+  border-style: none;
+  height: 56px;
+  width: 144px;
+}
+body .brief_inf {
+  height: 208px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 64px;
+}
+body .brief_inf h3 {
+  color: #155DFC;
+  font-size: 43.5px;
+  text-align: center;
+  margin: 0;
+}
+body .brief_inf p {
+  color: #4A5565;
+  font-size: 14.6px;
+  text-align: center;
+}
+body .brief_inf .cont {
+  display: flex;
+  flex-direction: column;
+}
+body .arguments {
+  height: 560px;
+  background-color: #F9FAFB;
+}
+body .arguments h2 {
+  text-align: center;
+  font-size: 33.5px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+body .arguments h3 {
+  font-size: 18.4px;
+  color: #000000;
+}
+body .arguments p {
+  color: #4A5565;
+  font-size: 18.8px;
+  text-align: center;
+}
+body .arguments .inf_cont {
+  width: 280px;
+  height: 224px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+body .arguments .info {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=style.css.map */

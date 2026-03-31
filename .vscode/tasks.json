@@ -8,6 +8,12 @@
             "type": "shell",
             "command": "sass styles/style.scss styles/style.css",
             "group":"build"
+        },
+        {
+            "label": "Compile SCSS about",
+            "type": "shell",
+            "command": "sass styles/about.scss styles/about.css",
+            "group":"build"
         }
     ]
 }

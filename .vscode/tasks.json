@@ -14,6 +14,18 @@
             "type": "shell",
             "command": "sass styles/about.scss styles/about.css",
             "group":"build"
+        },
+        {
+            "label": "Compile SCSS service",
+            "type": "shell",
+            "command": "sass styles/service.scss styles/service.css",
+            "group":"build"
+        },
+        {
+            "label": "Compile SCSS contact",
+            "type": "shell",
+            "command": "sass styles/contact.scss styles/contact.css",
+            "group":"build"
         }
     ]
 }

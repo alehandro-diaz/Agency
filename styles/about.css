@@ -13,8 +13,8 @@ body nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* position: fixed;
-  width: 100%; */
+  position: fixed;
+  width: 100%;
 }
 body nav .h1 {
   display: flex;

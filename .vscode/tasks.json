@@ -26,6 +26,12 @@
             "type": "shell",
             "command": "sass styles/contact.scss styles/contact.css",
             "group":"build"
-        }
+        },
+        {
+            "label": "Compile SCSS flats",
+            "type": "shell",
+            "command": "sass styles/flats.scss styles/flats.css",
+            "group":"build"
+        },
     ]
 }

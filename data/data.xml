@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<apartaments>
+    <flat id="1">
+        <title></title>
+        <price></price>
+        <location></location>
+        <bedrooms></bedrooms>
+        <bathrooms></bathrooms>
+        <square></square>
+        <description></description>
+    </flat>
+    <flat id="2">
+        <title></title>
+        <price></price>
+        <location></location>
+        <bedrooms></bedrooms>
+        <bathrooms></bathrooms>
+        <square></square>
+        <description></description>
+    </flat>
+    <flat id="3">
+        <title></title>
+        <price></price>
+        <location></location>
+        <bedrooms></bedrooms>
+        <bathrooms></bathrooms>
+        <square></square>
+        <description></description>
+    </flat>
+    <flat id="4">
+        <title></title>
+        <price></price>
+        <location></location>
+        <bedrooms></bedrooms>
+        <bathrooms></bathrooms>
+        <square></square>
+        <description></description>
+    </flat>
+    <flat id="5">
+        <title></title>
+        <price></price>
+        <location></location>
+        <bedrooms></bedrooms>
+        <bathrooms></bathrooms>
+        <square></square>
+        <description></description>
+    </flat>
+    <flat id="6">
+        <title></title>
+        <price></price>
+        <location></location>
+        <bedrooms></bedrooms>
+        <bathrooms></bathrooms>
+        <square></square>
+        <description></description>
+    </flat>
+    <flat id="7">
+        <title></title>
+        <price></price>
+        <location></location>
+        <bedrooms></bedrooms>
+        <bathrooms></bathrooms>
+        <square></square>
+        <description></description>
+    </flat>
+    <flat id="8">
+        <title></title>
+        <price></price>
+        <location></location>
+        <bedrooms></bedrooms>
+        <bathrooms></bathrooms>
+        <square></square>
+        <description></description>
+    </flat>
+    <flat id="9">
+        <title></title>
+        <price></price>
+        <location></location>
+        <bedrooms></bedrooms>
+        <bathrooms></bathrooms>
+        <square></square>
+        <description></description>
+    </flat>
+</apartaments>

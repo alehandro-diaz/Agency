@@ -1,11 +1,13 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
-body{
+
+body {
     font-family: Inter, regular;
     color: white;
-    nav{
+    
+    nav {
         height: 60px;
         background-color: #FFFFFF;
         display: flex;
@@ -13,63 +15,144 @@ body{
         align-items: center;
         position: fixed;
         width: 100%;
-        .h1{
+        
+        .h1 {
             display: flex;
             align-items: center;
         }
-        h1{
+        
+        h1 {
             font-family: Inter, bold;
             color: black;
             margin: 0;
             padding-left: 10px;
             font-size: 18.6px;
         }
-        .container{
+        
+        .container {
             display: flex;
             align-items: center;
-            a{
+            
+            a {
                 font-size: 15px;
                 text-decoration: none;
                 color: #4F5968;
                 margin-right: 20px;
             }
-            button{
+            
+            button {
                 background-color: #155DFC;
                 border-radius: 10px;
                 text-align: center;
                 width: 128px;
                 height: 40px;
                 border-style: none;
-                a{
-                    color:white;
+                
+                a {
+                    color: white;
                     font-size: 14.6px;
                     margin-right: 0px;
                 }
             }
         }
+        
+        // ========== БУРГЕР-МЕНЮ (только для мобильных) ==========
+        .burger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            z-index: 1001;
+            gap: 5px;
+            
+            span {
+                width: 28px;
+                height: 3px;
+                background-color: #155DFC;
+                border-radius: 3px;
+                transition: 0.3s;
+            }
+            
+            &.active {
+                span:nth-child(1) {
+                    transform: rotate(45deg) translate(6px, 6px);
+                }
+                span:nth-child(2) {
+                    opacity: 0;
+                }
+                span:nth-child(3) {
+                    transform: rotate(-45deg) translate(6px, -6px);
+                }
+            }
+        }
+        
+        // Мобильная версия (бургер)
+        @media (max-width: 768px) {
+            justify-content: space-between;
+            padding: 0 20px;
+            
+            .burger {
+                display: flex;
+            }
+            
+            .container {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                max-width: 300px;
+                height: 100vh;
+                background-color: white;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                transition: 0.4s ease;
+                box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+                z-index: 1000;
+                
+                &.active {
+                    right: 0;
+                }
+                
+                a {
+                    font-size: 18px;
+                    margin-right: 0;
+                }
+                
+                button {
+                    width: 140px;
+                    height: 48px;
+                }
+            }
+        }
     }
-    .greeting{
+    
+    .greeting {
         height: 600px;
         background: linear-gradient(to right, #1C398E, #1447E6);
         display: flex;
         justify-content: center;
         align-items: center;
-        .container_greeting{
+        
+        .container_greeting {
             display: flex;
             flex-direction: column;
-            h2{
+            
+            h2 {
                 margin: 0;
                 color: #FFFFFF;
                 font-size: 58.6px;
                 font-family: Inter, Medium;
             }
-            p{
+            
+            p {
                 font-size: 22.1;
                 margin-top: 50px;
                 margin-bottom: 30px;
             }
-            .buttons{
-                .butt1{
+            
+            .buttons {
+                .butt1 {
                     background-color: #155DFC;
                     border-radius: 10px;
                     color: #FFFFFF;
@@ -77,71 +160,144 @@ body{
                     height: 56px;
                     width: 144px;
                     margin-right: 15px;
-                    a{
+                    
+                    a {
                         color: #FFFFFF;
                     }
                 }
-                .butt2{
+                
+                .butt2 {
                     background-color: #FFFFFF;
                     border-radius: 10px;
                     color: #155DFC;
                     border-style: none;
                     height: 56px;
                     width: 144px;
-                    a{
+                    
+                    a {
                         color: #1C398E;
                     }
                 }
-                a{
+                
+                a {
                     text-decoration: none;
                 }
             }
         }
         
+        // Мобильная версия — центрируем текст
+        @media (max-width: 767px) {
+            height: auto;
+            min-height: 500px;
+            padding: 100px 20px 60px;
+            
+            .container_greeting {
+                text-align: center;
+                align-items: center;
+                
+                h2 {
+                    font-size: 36px;
+                    text-align: center;
+                }
+                
+                p {
+                    font-size: 16px;
+                    text-align: center;
+                    padding: 0 10px;
+                }
+                
+                .buttons {
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                    flex-wrap: wrap;
+                    
+                    .butt1, .butt2 {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        
+        // Очень маленькие экраны (до 480px)
+        @media (max-width: 479px) {
+            .container_greeting {
+                h2 {
+                    font-size: 28px;
+                }
+                
+                p {
+                    font-size: 14px;
+                }
+                
+                .buttons {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 12px;
+                }
+            }
+        }
     }
-    .brief_inf{
+    
+    .brief_inf {
         height: 208px;
         display: flex;
         justify-content: space-around;
         padding-top: 64px;
-        h3{
+        
+        h3 {
             color: #155DFC;
             font-size: 43.5px;
             text-align: center;
             margin: 0;
         }
-        p{
+        
+        p {
             color: #4A5565;
             font-size: 14.6px;
             text-align: center;
         }
-        .cont{
+        
+        .cont {
             display: flex;
             flex-direction: column;
         }
+        
+        // Адаптив для brief_inf
+        @media (max-width: 767px) {
+            height: auto;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px 20px;
+        }
     }
-    .arguments{
+    
+    .arguments {
         height: 560px;
         background-color: #F9FAFB;
-        h2{
+        
+        h2 {
             text-align: center;
             font-size: 33.5px;
             color: #000000;
             margin-bottom: 20px;
-            padding-top:80px;
+            padding-top: 80px;
         }
-        h3{
+        
+        h3 {
             font-size: 18.4px;
             color: #000000;
             margin-left: 8px;
         }
-        p{
-           color: #4A5565;
-           font-size: 18.8px;
-           text-align: center;
-           margin-bottom: 64px;
+        
+        p {
+            color: #4A5565;
+            font-size: 18.8px;
+            text-align: center;
+            margin-bottom: 64px;
         }
-        .inf_cont{
+        
+        .inf_cont {
             width: 280px;
             height: 224px;
             border-radius: 10px;
@@ -150,139 +306,251 @@ body{
             flex-direction: column;
             justify-content: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            p{
+            
+            p {
                 text-align: left;
                 margin-bottom: 0px;
                 margin-top: 20px;
                 margin-left: 8px;
                 font-size: 15px;
             }
-            .svg{
+            
+            .svg {
                 margin-bottom: 20px;
                 margin-left: 8px;
             }
         }
-        .info{
+        
+        .info {
             display: flex;
             justify-content: space-around;
         }
+        
+        // Адаптив для arguments
+        @media (max-width: 1023px) {
+            height: auto;
+            padding-bottom: 60px;
+            
+            .info {
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+            }
+            
+            .inf_cont {
+                width: 260px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .info {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .inf_cont {
+                width: 90%;
+                max-width: 320px;
+            }
+        }
     }
-    .feautered{
+    
+    .feautered {
         height: 748px;
-        h2{
+        
+        h2 {
             color: #000000;
             font-size: 33.9px;
             padding-top: 80px;
             text-align: center;
         }
-        p{
+        
+        p {
             text-align: center;
-            color:#4F5968;
+            color: #4F5968;
             margin-top: 16px;
             margin-bottom: 64px;
         }
-        .flats{
+        
+        .flats {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
         }
-        .flats_info{
+        
+        .flats_info {
             width: 384px;
             height: 440px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             display: flex;
             flex-direction: column;
-            figure{
-                p{
+            
+            figure {
+                p {
                     color: #155DFC;
                 }
             }
-            h6{
+            
+            h6 {
                 color: #000000;
                 font-size: 19.2;
             }
         }
+        
+        // Адаптив для feautered
+        @media (max-width: 1023px) {
+            height: auto;
+            padding-bottom: 60px;
+            
+            .flats {
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center;
+            }
+            
+            .flats_info {
+                width: 320px;
+                height: auto;
+                padding-bottom: 20px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .flats {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .flats_info {
+                width: 90%;
+                max-width: 360px;
+            }
+        }
     }
-    .contacts{
+    
+    .contacts {
         height: 340px;
         background-color: #155DFC;
-        h2{
+        
+        h2 {
             padding-top: 80px;
             text-align: center;
         }
-        p{
+        
+        p {
             text-align: center;
             font-size: 18.6px;
             margin-top: 24px;
             margin-bottom: 24px;
         }
-        .butt4{
-            height:56px;
-            width:187px;
+        
+        .butt4 {
+            height: 56px;
+            width: 187px;
             text-align: center;
             border-radius: 10px;
             border-style: none;
-            a{
+            
+            a {
                 color: #155DFC;
             }
-            
         }
-        .cont_contacts{
+        
+        .cont_contacts {
             display: flex;
             flex-direction: column;
-            div{
+            
+            div {
                 display: flex;
                 justify-content: center;
             }
         }
+        
+        // Адаптив для contacts
+        @media (max-width: 767px) {
+            height: auto;
+            padding: 60px 20px;
+            
+            h2 {
+                font-size: 28px;
+                padding-top: 0;
+            }
+        }
     }
-    footer{
+    
+    footer {
         height: 344px;
         background-color: #101828;
-        .information{
+        
+        .information {
             display: flex;
             justify-content: space-evenly;
             padding-top: 48px;
-            .inf_footer{
+            
+            .inf_footer {
                 display: flex;
                 flex-direction: column;
-                p{
+                
+                p {
                     margin-top: 16px;
                     margin-bottom: 16px;
                     color: #4F5968;
                 }
-                .icons{
+                
+                .icons {
                     margin-right: 18px;
                 }
-                h3{
+                
+                h3 {
                     margin-bottom: 16px;
                 }
-                a{
+                
+                a {
                     text-decoration: none;
-                    color:#4F5968;
+                    color: #4F5968;
                     margin-bottom: 16px;
                 }
             }
         }
-        .logo_and_text{
-            display:flex;
+        
+        .logo_and_text {
+            display: flex;
         }
-        .flex{
+        
+        .flex {
             display: flex;
             align-items: center;
-            .p{
+            
+            .p {
                 margin-left: 8px;
             }
         }
-        p{
+        
+        p {
             text-align: center;
         }
-        .hr{
+        
+        .hr {
             width: 80%;
             border-top: solid 2px #4F5968;
             padding-top: 32px;
             margin: 0 auto;
+        }
+        
+        // Адаптив для footer
+        @media (max-width: 767px) {
+            height: auto;
+            
+            .information {
+                flex-direction: column;
+                gap: 40px;
+                padding: 48px 20px;
+            }
+            
+            .hr {
+                width: 90%;
+            }
         }
     }
 }

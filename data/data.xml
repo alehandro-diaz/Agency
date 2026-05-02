@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <apartaments>
     <flat id="1">
-        <title></title>
-        <price></price>
-        <location></location>
-        <bedrooms></bedrooms>
-        <bathrooms></bathrooms>
-        <square></square>
+        <title>Соввременная роскошная вилла</title>
+        <price>2 450 000</price>
+        <location>Брест</location>
+        <bedrooms>4</bedrooms>
+        <bathrooms>3</bathrooms>
+        <square>3200</square>
         <description></description>
     </flat>
     <flat id="2">

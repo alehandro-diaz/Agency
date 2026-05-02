@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <nav>
@@ -21,11 +22,18 @@
                 <path d="M13.3333 18.6667H18.6667" stroke="#155DFC" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M13.3333 24H18.6667" stroke="#155DFC" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <h1>ПарймЭстейт</h1>
+            <h1>ПраймЭстейт</h1>
         </div>
         
-        <div class="container">
+        <div class="burger" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="container" id="navMenu">
             <a href="index.html">Гланое</a>
+            <a href="flats.html">Недвижимость</a>
             <a href="about.html">О нас</a>
             <a href="contact.html">Связаться с нами</a>
             <a href="service.html">Услуги</a>
@@ -220,7 +228,8 @@
         <div class="hr">
             <p>© 2026 ПраймЭстейт. Все права защищены.</p>
         </div>
-        
     </footer>
 </body>
+<script src="scripts/burger.js"></script>
+<script src="scripts/animation.js"></script>
 </html>

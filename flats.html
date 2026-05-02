@@ -21,11 +21,18 @@
                 <path d="M13.3333 18.6667H18.6667" stroke="#155DFC" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M13.3333 24H18.6667" stroke="#155DFC" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <h1>ПарймЭстейт</h1>
+            <h1>ПраймЭстейт</h1>
         </div>
         
-        <div class="container">
+        <div class="burger" id="burgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <div class="container" id="navMenu">
             <a href="index.html">Гланое</a>
+            <a href="flats.html">Недвижимость</a>
             <a href="about.html">О нас</a>
             <a href="contact.html">Связаться с нами</a>
             <a href="service.html">Услуги</a>
@@ -42,9 +49,29 @@
         </div>
     </section>
     <section class="search">
-        <div class="search-container">
-            <input type="search" class="search-input" placeholder="Что ищем?">
-            <button class="search-btn">🔍 Найти</button>
+        <div class="search_box">
+            <div class="search-container">
+                <input 
+                    type="search" 
+                    class="search-input" 
+                    placeholder="Поиск по местоположению или названию объекта недвижимости..."
+                >
+
+                <select class="search-select">
+                    <option>Все типы</option>
+                    <option>Квартира</option>
+                    <option>Дом</option>
+                </select>
+
+                <select class="search-select">
+                    <option>Все цены</option>
+                    <option>До 100 000</option>
+                    <option>До 200 000</option>
+                </select>
+            </div>
+            <p class="search-result">
+                Показано 9 из 9 объектов недвижимости
+            </p>
         </div>
     </section>
     <section class="flats">
@@ -581,6 +608,7 @@
             <div class="inf_footer">
                 <h3>Ссылки</h3>
                 <a href="index.html">Гланое</a>
+                <a href="flats.html">Недвижимость</a>
                 <a href="about.html">О нас</a>
                 <a href="contact.html">Связаться с нами</a>
                 <a href="service.html">Услуги</a>
@@ -615,4 +643,6 @@
         </div>
     </footer>
 </body>
+<script src="scripts/burger.js"></script>
+<script src="scripts/animation.js"></script>
 </html>

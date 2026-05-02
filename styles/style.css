@@ -50,6 +50,65 @@ body nav .container button a {
   font-size: 14.6px;
   margin-right: 0px;
 }
+body nav .burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1001;
+  gap: 5px;
+}
+body nav .burger span {
+  width: 28px;
+  height: 3px;
+  background-color: #155DFC;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+body nav .burger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+body nav .burger.active span:nth-child(2) {
+  opacity: 0;
+}
+body nav .burger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+@media (max-width: 768px) {
+  body nav {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  body nav .burger {
+    display: flex;
+  }
+  body nav .container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: 0.4s ease;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  body nav .container.active {
+    right: 0;
+  }
+  body nav .container a {
+    font-size: 18px;
+    margin-right: 0;
+  }
+  body nav .container button {
+    width: 140px;
+    height: 48px;
+  }
+}
 body .greeting {
   height: 600px;
   background: linear-gradient(to right, #1C398E, #1447E6);
@@ -98,6 +157,48 @@ body .greeting .container_greeting .buttons .butt2 a {
 body .greeting .container_greeting .buttons a {
   text-decoration: none;
 }
+@media (max-width: 767px) {
+  body .greeting {
+    height: auto;
+    min-height: 500px;
+    padding: 100px 20px 60px;
+  }
+  body .greeting .container_greeting {
+    text-align: center;
+    align-items: center;
+  }
+  body .greeting .container_greeting h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  body .greeting .container_greeting p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  body .greeting .container_greeting .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  body .greeting .container_greeting .buttons .butt1, body .greeting .container_greeting .buttons .butt2 {
+    margin-right: 0;
+  }
+}
+@media (max-width: 479px) {
+  body .greeting .container_greeting h2 {
+    font-size: 28px;
+  }
+  body .greeting .container_greeting p {
+    font-size: 14px;
+  }
+  body .greeting .container_greeting .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
 body .brief_inf {
   height: 208px;
   display: flex;
@@ -118,6 +219,14 @@ body .brief_inf p {
 body .brief_inf .cont {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 767px) {
+  body .brief_inf {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+  }
 }
 body .arguments {
   height: 560px;
@@ -166,6 +275,30 @@ body .arguments .info {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 1023px) {
+  body .arguments {
+    height: auto;
+    padding-bottom: 60px;
+  }
+  body .arguments .info {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  body .arguments .inf_cont {
+    width: 260px;
+  }
+}
+@media (max-width: 767px) {
+  body .arguments .info {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .arguments .inf_cont {
+    width: 90%;
+    max-width: 320px;
+  }
+}
 body .feautered {
   height: 748px;
 }
@@ -201,6 +334,32 @@ body .feautered .flats_info h6 {
   color: #000000;
   font-size: 19.2;
 }
+@media (max-width: 1023px) {
+  body .feautered {
+    height: auto;
+    padding-bottom: 60px;
+  }
+  body .feautered .flats {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  body .feautered .flats_info {
+    width: 320px;
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  body .feautered .flats {
+    flex-direction: column;
+    align-items: center;
+  }
+  body .feautered .flats_info {
+    width: 90%;
+    max-width: 360px;
+  }
+}
 body .contacts {
   height: 340px;
   background-color: #155DFC;
@@ -232,6 +391,16 @@ body .contacts .cont_contacts {
 body .contacts .cont_contacts div {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 767px) {
+  body .contacts {
+    height: auto;
+    padding: 60px 20px;
+  }
+  body .contacts h2 {
+    font-size: 28px;
+    padding-top: 0;
+  }
 }
 body footer {
   height: 344px;
@@ -280,6 +449,19 @@ body footer .hr {
   border-top: solid 2px #4F5968;
   padding-top: 32px;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  body footer {
+    height: auto;
+  }
+  body footer .information {
+    flex-direction: column;
+    gap: 40px;
+    padding: 48px 20px;
+  }
+  body footer .hr {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -33,5 +33,11 @@
             "command": "sass styles/flats.scss styles/flats.css",
             "group":"build"
         },
+        {
+            "label": "Compile SCSS appartament",
+            "type": "shell",
+            "command": "sass styles/appartament.scss styles/appartament.css",
+            "group":"build"
+        },
     ]
 }

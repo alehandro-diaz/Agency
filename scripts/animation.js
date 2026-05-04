@@ -34,6 +34,11 @@
             box-shadow: 0 16px 28px -16px rgba(0, 0, 0, 0.35);
         }
 
+        /* Containing block for .nav-indicator; without this, absolute children anchor to nav (fixed) */
+        nav .container {
+            position: relative;
+        }
+
         nav .container > a {
             position: relative;
             transition: color 220ms ease;

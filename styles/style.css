@@ -3,6 +3,76 @@
   margin: 0;
 }
 
+.flats_box {
+  width: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+.flats_box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+.flats_box img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+.flats_box .text_box {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.flats_box h3 {
+  color: #155DFC;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+.flats_box .text_box > p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0A0A0A;
+  margin: 0;
+}
+.flats_box .figure {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.flats_box .figure p {
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0;
+}
+.flats_box .inf_flat {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid #E5E7EB;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.flats_box .flat_cels {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.flats_box .flat_cels p {
+  font-size: 13px;
+  color: #4F5968;
+  line-height: 1.2;
+  margin: 0;
+}
+.flats_box .flat_cels svg {
+  min-width: 16px;
+}
+
 body {
   font-family: Inter, regular;
   color: white;
@@ -15,6 +85,9 @@ body nav {
   align-items: center;
   position: fixed;
   width: 100%;
+  top: 0;
+  z-index: 10000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 body nav .h1 {
   display: flex;

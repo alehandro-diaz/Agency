@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contact_request>
+  <submitted_at>2026-05-03T22:10:00+03:00</submitted_at>
+  <fio>Иван Иванов</fio>
+  <email>ivan@example.com</email>
+  <phone>+375 29 000 00 00</phone>
+  <purpose code="buy">Покупка недвижимости</purpose>
+  <message>Хочу подобрать квартиру в Минске.</message>
+</contact_request>

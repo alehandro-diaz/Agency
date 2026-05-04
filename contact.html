@@ -94,31 +94,35 @@
     </section>
     <section class="letter">
         <div class="form_cont">
-            <form>
+            <form id="contactForm" novalidate>
                 <h2>Отправьте нам сообщение</h2>
                 <p>Заполните форму ниже, и наша команда свяжется с вами в течение 24 часов.</p>
-                <label for="1">Ваше ФИО:</label>
-                <input type="text" name="FIO" id="1" placeholder="Джон ВУ">
-                <label for="2">Ваше электронная почта:</label>
-                <input type="email" name="mail" id="2" placeholder="john@mail.ru">
-                <label for="3">Номер телефона:</label>
-                <input type="tel" name="phone" id="3" placeholder="+375 29 000 00 00">
-                <label for="4">Ваша цель:</label>
-                <select name="city" id="4">
-                    <option value="msk">Продажа недвижимости</option>
-                    <option value="spb">покупка недвижимости</option>
-                    <option value="nsk">Оценка недвижимости</option>
-                    <option value="ekb">Прочее</option>
+                <label for="contact-fio">Ваше ФИО:</label>
+                <input type="text" name="FIO" id="contact-fio" placeholder="Джон ВУ" autocomplete="name" required>
+                <label for="contact-email">Ваше электронная почта:</label>
+                <input type="email" name="mail" id="contact-email" placeholder="john@mail.ru" autocomplete="email" required>
+                <label for="contact-phone">Номер телефона:</label>
+                <input type="tel" name="phone" id="contact-phone" placeholder="+375 29 000 00 00" autocomplete="tel" required>
+                <label for="contact-purpose">Ваша цель:</label>
+                <select name="purpose" id="contact-purpose">
+                    <option value="buy">Покупка недвижимости</option>
+                    <option value="sale">Продажа недвижимости</option>
+                    <option value="other">Управление недвижимостью</option>
+                    <option value="invest_colsunting">Инвестеционное консультирование</option>
+                    <option value="other">Коммерческая недвижимость</option>
+                    <option value="appraisal">Оценка недвижимости</option>
+                    <option value="other">Прочее</option>
                 </select>
-                <label for="1">Написать сообщение:</label>
-                <input type="text" name="" id="5" placeholder="Напишите что нибудь..." class="message">
+                <label for="contact-message">Написать сообщение:</label>
+                <input type="text" name="message" id="contact-message" placeholder="Напишите что нибудь..." class="message">
+                <p class="contact-form__status" aria-live="polite"></p>
                 <input type="submit" value="Отправить сообщение">
             </form>
             <div class="text_cont">
                 <h2>Посетите наш офис</h2>
                 <p>Загляните к нам в офис для личной консультации. Наша команда готова<br>
                     помочь вам найти идеальную недвижимость.</p>
-                <img src="images/Background.png" alt="">
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/org/belorusskiy_gosudarstvenny_tekhnologicheskiy_universitet/1367795942/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Белорусский государственный технологический университет</a><a href="https://yandex.by/maps/157/minsk/category/university/184106140/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">ВУЗ в Минске</a><iframe src="https://yandex.by/map-widget/v1/?ll=27.559717%2C53.891644&mode=poi&poi%5Bpoint%5D=27.559765%2C53.891444&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1367795942&z=17.17" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                 <div class="why">
                     <h3>Почему стоит связаться с нами</h3>
                     <ul>
@@ -210,4 +214,5 @@
 </body>
 <script src="scripts/burger.js"></script>
 <script src="scripts/animation.js"></script>
+<script src="scripts/contact-form.js"></script>
 </html>

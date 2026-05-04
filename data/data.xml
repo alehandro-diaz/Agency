@@ -7,78 +7,198 @@
         <bedrooms>4</bedrooms>
         <bathrooms>3</bathrooms>
         <square>3200</square>
-        <description></description>
+        <type>Дом</type>
+        <description>Эта потрясающая современная роскошная вилла предлагает идеальное сочетание современного дизайна и комфорта.
+Благодаря открытой планировке с окнами от пола до потолка, из дома открываются захватывающие виды,
+и много естественного света. Кухня для гурманов оборудована первоклассной бытовой техникой, изготовленными на заказ шкафами и большим островом, идеально подходящим для приема гостей. Главная спальня располагает ванной комнатой в стиле спа-салона и собственным балконом. Дополнительные удобства включают в себя систему «умный дом», частный бассейн и
+профессионально благоустроенную территорию.</description>
+        <feauters id="11">Умный дом</feauters>
+        <feauters id="12">Кухня</feauters>
+        <feauters id="13">Домашний кинотеатр</feauters>
+        <feauters id="14">Гараж на три машиноместа</feauters>
+        <feauters id="15">Закрытый бассейн</feauters>
+        <feauters id="16">Гардеробная</feauters>
+        <feauters id="17">Винный аогреб</feauters>
+        <feauters id="18">Система безлпасности</feauters>
+        <year>2022</year>
+        <id_obj>PE-0001</id_obj>
+        <size>8500</size>
+        <status>Для продажи</status>
     </flat>
     <flat id="2">
-        <title></title>
-        <price></price>
-        <location></location>
-        <bedrooms></bedrooms>
-        <bathrooms></bathrooms>
-        <square></square>
-        <description></description>
+        <title>Пентхаус в центре города</title>
+        <price>3 200 000</price>
+        <location>Минск</location>
+        <bedrooms>3</bedrooms>
+        <bathrooms>3</bathrooms>
+        <square>2800</square>
+        <type>Квартира</type>
+        <description>Ощутите роскошь жизни в этом изысканном пентхаусе в самом сердце Манхэттена. Из окон открывается панорамный вид на город, интерьер отделан высококачественными материалами, а планировка просторная и открытая. Современная кухня оборудована первоклассной бытовой техникой и изготовленными на заказ итальянскими шкафами. Окна от пола до потолка наполняют пространство естественным светом. В здании есть первоклассные удобства, включая круглосуточную консьерж-службу, фитнес-центр и террасу на крыше.</description>
+        <feauters id="21">Круглосуточная консьерж-служба</feauters>
+        <feauters id="22">Фитнес-центр</feauters>
+        <feauters id="23">Современная кухня</feauters>
+        <feauters id="24">Центральный кондиционер</feauters>
+        <feauters id="25">Терраса на крыше</feauters>
+        <feauters id="26">Виды города</feauters>
+        <feauters id="27">Паркетные полы</feauters>
+        <feauters id="28">Охраняемая парковка</feauters>
+        <year>2020</year>
+        <id_obj>PE-0002</id_obj>
+        <size>Н/Д</size>
+        <status>Для продажи</status>
     </flat>
     <flat id="3">
-        <title></title>
-        <price></price>
-        <location></location>
-        <bedrooms></bedrooms>
-        <bathrooms></bathrooms>
-        <square></square>
-        <description></description>
+        <title>Прибрежное поместье</title>
+        <price>4 850 000</price>
+        <location>Браслав</location>
+        <bedrooms>5</bedrooms>
+        <bathrooms>4</bathrooms>
+        <square>4500</square>
+        <type>Дом</type>
+        <description>Архитектурный шедевр, расположенный на берегу моря с потрясающим видом на океан. Это великолепное поместье отличается величественным входом, высокими потолками и высококачественной отделкой. Просторные жилые зоны плавно переходят в открытые пространства для отдыха с бассейном-инфинити с видом на воду. Кухня для шеф-повара оборудована профессиональной бытовой техникой. Каждая спальня предлагает уединение и роскошь, а главная спальня имеет две ванные комнаты и собственную террасу.</description>
+        <feauters id="31">Доступ к набережной</feauters>
+        <feauters id="32">Частный причал</feauters>
+        <feauters id="33">Домашний офис</feauters>
+        <feauters id="34">Гостевой люкс</feauters>
+        <feauters id="35">Бесконечный бассейн</feauters>
+        <feauters id="36">Кухня шеф-повара</feauters>
+        <feauters id="37">Медиа-комната</feauters>
+        <feauters id="38">Окна, устойчивые к ураганам</feauters>
+        <year>2021</year>
+        <id_obj>PE-0003</id_obj>
+        <size>12000</size>
+        <status>Для продажи</status>
     </flat>
     <flat id="4">
-        <title></title>
-        <price></price>
-        <location></location>
-        <bedrooms></bedrooms>
-        <bathrooms></bathrooms>
-        <square></square>
-        <description></description>
+        <title>Элегантный семейный дом</title>
+        <price>1 850 000</price>
+        <location>Брест</location>
+        <bedrooms>4</bedrooms>
+        <bathrooms>3</bathrooms>
+        <square>2900</square>
+        <type>Дом</type>
+        <description>Этот элегантный семейный дом сочетает в себе классическую архитектуру и современные удобства в престижном районе Сан-Франциско. В доме полы из твердой древесины, кухня для гурманов с гранитными столешницами и формальная столовая, идеально подходящая для приема гостей. Главная спальня включает в себя роскошную ванную комнату и гардеробную. Задний двор представляет собой уединенный оазис с ландшафтным садом и патио.</description>
+        <feauters id="41">Доступ к набережной</feauters>
+        <feauters id="42">Частный причал</feauters>
+        <feauters id="43">Домашний офис</feauters>
+        <feauters id="44">Гостевой люкс</feauters>
+        <feauters id="45">Бесконечный бассейн</feauters>
+        <feauters id="46">Кухня шеф-повара</feauters>
+        <feauters id="47">Медиа-комната</feauters>
+        <feauters id="48">Окна, устойчивые к ураганам</feauters>
+        <year>2018</year>
+        <id_obj>PE-0004</id_obj>
+        <size>12000</size>
+        <status>Для продажи</status>
     </flat>
     <flat id="5">
-        <title></title>
-        <price></price>
-        <location></location>
-        <bedrooms></bedrooms>
-        <bathrooms></bathrooms>
-        <square></square>
-        <description></description>
+        <title>Городской жилой комплекс</title>
+        <price>1 200 000</price>
+        <location>Гомель</location>
+        <bedrooms>2</bedrooms>
+        <bathrooms>2</bathrooms>
+        <square>1 800</square>
+        <type>Квартира</type>
+        <description>Современная городская жизнь во всей красе в этой современной квартире, расположенной в оживленном районе Чикаго. Эта светлая и просторная квартира имеет открытую планировку с большими окнами, обеспечивающими отличное естественное освещение. Стильная кухня оборудована бытовой техникой из нержавеющей стали и кварцевыми столешницами. Обе спальни просторные и имеют вместительные шкафы. К услугам жильцов фитнес-центр, общая зона отдыха и охраняемая парковка.</description>
+        <feauters id="51">Открытая концепция</feauters>
+        <feauters id="52">Прачечная в номере</feauters>
+        <feauters id="53">Разрешено проживание с домашними животными</feauters>
+        <feauters id="54">Балкон</feauters>
+        <feauters id="55">Бытовая техника из нержавеющей стали</feauters>
+        <feauters id="56">Доступ в тренажерный зал</feauters>
+        <feauters id="57">Складское помещение</feauters>
+        <feauters id="58">Доступ к общественному транспорту</feauters>
+        <year>2019</year>
+        <id_obj>PE-0005</id_obj>
+        <size>Н/Д</size>
+        <status>Для продажи</status>
     </flat>
     <flat id="6">
-        <title></title>
-        <price></price>
-        <location></location>
-        <bedrooms></bedrooms>
-        <bathrooms></bathrooms>
-        <square></square>
-        <description></description>
+        <title>Пригородный жилой дом</title>
+        <price>850 000</price>
+        <location>Логойск</location>
+        <bedrooms>3</bedrooms>
+        <bathrooms>2</bathrooms>
+        <square>2400</square>
+        <type>Дом</type>
+        <description>Идеальный семейный дом в тихом пригороде с отличными школами поблизости. Этот ухоженный дом предлагает комфортабельные жилые помещения с открытой планировкой, соединяющей гостиную и кухню. Просторный задний двор идеально подходит для отдыха на свежем воздухе и встреч. Обновленные ванные комнаты и кухня с современной сантехникой. Расположение обеспечивает легкий доступ к торговым центрам, паркам и основным автомагистралям.</description>
+        <feauters id="61">Обновленный интерьер</feauters>
+        <feauters id="62">Открытая планировка</feauters>
+        <feauters id="63">Рядом со школой</feauters>
+        <feauters id="64">Пристроенный гараж</feauters>
+        <feauters id="65">Большой задний двор</feauters>
+        <feauters id="66">Энергоэффективность</feauters>
+        <feauters id="67">Общественный бассейн</feauters>
+        <feauters id="68">Тихий район</feauters>
+        <year>2015</year>
+        <id_obj>PE-0006</id_obj>
+        <size>7200</size>
+        <status>Для продажи</status>
     </flat>
     <flat id="7">
-        <title></title>
-        <price></price>
-        <location></location>
-        <bedrooms></bedrooms>
-        <bathrooms></bathrooms>
-        <square></square>
-        <description></description>
+        <title>Роскошные апартаменты в кондоминиуме</title>
+        <price>1 650 000</price>
+        <location>Минск</location>
+        <bedrooms>3</bedrooms>
+        <bathrooms>2</bathrooms>
+        <square>2100</square>
+        <type>Кондоминиум</type>
+        <description>Изысканные апартаменты класса люкс, предлагающие утонченную городскую жизнь в центре Сиэтла. Эта прекрасно спроектированная квартира отличается высококачественной отделкой, паркетными полами и панорамными окнами от пола до потолка с потрясающим видом на город и воду. Дизайнерская кухня оборудована первоклассной бытовой техникой и изготовленной на заказ мебелью. В здании есть фитнес-центр, спа-салон, бизнес-центр и консьерж-сервис.</description>
+        <feauters id="71">Вид на город и воду</feauters>
+        <feauters id="72">Консьерж-сервис</feauters>
+        <feauters id="73">Бизнес-центр</feauters>
+        <feauters id="74">Хранилище</feauters>
+        <feauters id="75">Премиальная отделка</feauters>
+        <feauters id="76">Спа-центр и фитнес-центр</feauters>
+        <feauters id="77">Крытая парковка</feauters>
+        <feauters id="78">Разрешено проживание с домашними животными</feauters>
+        <year>2021</year>
+        <id_obj>PE-0007</id_obj>
+        <size>Н/Д</size>
+        <status>Для продажи</status>
     </flat>
     <flat id="8">
-        <title></title>
-        <price></price>
-        <location></location>
-        <bedrooms></bedrooms>
-        <bathrooms></bathrooms>
-        <square></square>
-        <description></description>
+        <title>Коммерческие офисные помещения</title>
+        <price>3 500 000</price>
+        <location>Брест</location>
+        <bedrooms>0</bedrooms>
+        <bathrooms>4</bathrooms>
+        <square>5000</square>
+        <type>Коммерческий</type>
+        <description>Первоклассные коммерческие офисные помещения в самом центре делового района Бостона. Этот современный офис отличается гибкой планировкой, высокоскоростным интернетом и обилием естественного света. В помещении есть несколько конференц-залов, приемная и открытые рабочие зоны. Расположен в престижном здании с круглосуточной охраной, лифтом и парковкой на территории. Идеально подходит для растущих компаний или профессиональных фирм.</description>
+        <feauters id="81">Отличное местоположение</feauters>
+        <feauters id="82">Конференц-залы</feauters>
+        <feauters id="83">Круглосуточная охрана</feauters>
+        <feauters id="84">Парковка на территории</feauters>
+        <feauters id="85">Высокоскоростной интернет</feauters>
+        <feauters id="86">Зона приема</feauters>
+        <feauters id="87">Доступ к лифту</feauters>
+        <feauters id="88">Современные системы отопления, вентиляции и кондиционирования воздуха</feauters>
+        <year>2017</year>
+        <id_obj>PE-0008</id_obj>
+        <size>Н/Д</size>
+        <status>Для продажи</status>
     </flat>
     <flat id="9">
-        <title></title>
-        <price></price>
-        <location></location>
-        <bedrooms></bedrooms>
-        <bathrooms></bathrooms>
-        <square></square>
-        <description></description>
+        <title>Уютный таунхаус</title>
+        <price>950 000</price>
+        <location>Смолевичи</location>
+        <bedrooms>3</bedrooms>
+        <bathrooms>2</bathrooms>
+        <square>2200</square>
+        <type>Дом</type>
+        <description>Очаровательный таунхаус в престижном районе Портленда, предлагающий комфортное проживание с современным ремонтом. Этот хорошо спроектированный дом включает в себя открытую гостиную и столовую, обновленную кухню с бытовой техникой из нержавеющей стали и уютные спальни. Частный внутренний дворик идеально подходит для отдыха на свежем воздухе. Расположенный недалеко от общественного транспорта, ресторанов и парков, он обеспечивает идеальный баланс городских удобств и спокойствия жилого района.</description>
+        <feauters id="91">Обновленная кухня</feauters>
+        <feauters id="92">Близость к транспорту</feauters>
+        <feauters id="93">Энергоэффективные окна Energy Star</feauters>
+        <feauters id="94">Общий внутренний двор</feauters>
+        <feauters id="95">Высокоскоростной интернет</feauters>
+        <feauters id="96">Зона приема</feauters>
+        <feauters id="97">Доступ к лифту</feauters>
+        <feauters id="98">Современные системы отопления, вентиляции и кондиционирования воздуха</feauters>
+        <year>2017</year>
+        <id_obj>PE-0008</id_obj>
+        <size>Н/Д</size>
+        <status>Для продажи</status>
     </flat>
 </apartaments>

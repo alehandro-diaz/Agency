@@ -39,5 +39,11 @@
             "command": "sass styles/appartament.scss styles/appartament.css",
             "group":"build"
         },
+        {
+            "label": "Compile SCSS animations",
+            "type": "shell",
+            "command": "sass styles/animations.scss styles/animations.css",
+            "group":"build"
+        }
     ]
 }

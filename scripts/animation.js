@@ -34,9 +34,11 @@
             box-shadow: 0 16px 28px -16px rgba(0, 0, 0, 0.35);
         }
 
-        /* Containing block for .nav-indicator; without this, absolute children anchor to nav (fixed) */
-        nav .container {
-            position: relative;
+        /* Containing block for .nav-indicator (desktop only). On small screens nav .container must stay position:fixed for the drawer — a bare "relative" rule would override equal-specificity mobile rules loaded earlier. */
+        @media (min-width: 769px) {
+            nav .container {
+                position: relative;
+            }
         }
 
         nav .container > a {

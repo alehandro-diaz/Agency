@@ -63,6 +63,35 @@
             const propertyId = getText("id_obj");
             const status = getText("status");
 
+            const galleryEl = flat.getElementsByTagName("gallery")[0];
+            const photos = galleryEl
+                ? Array.from(galleryEl.getElementsByTagName("photo"))
+                      .map((node) => node.textContent.replace(/\s+/g, " ").trim())
+                      .filter(Boolean)
+                : [];
+
+            const backImg = document.querySelector(".appart .back_img");
+            if (backImg) {
+                backImg.classList.remove("back_img--gallery");
+                backImg.innerHTML = "";
+                backImg.style.backgroundImage = "";
+                if (photos.length === 1) {
+                    const path = photos[0].replace(/\\/g, "/");
+                    backImg.style.backgroundImage = `url("${path}")`;
+                    backImg.style.backgroundSize = "cover";
+                    backImg.style.backgroundPosition = "center";
+                } else if (photos.length > 1) {
+                    backImg.classList.add("back_img--gallery");
+                    photos.forEach((src) => {
+                        const img = document.createElement("img");
+                        img.src = src.replace(/\\/g, "/");
+                        img.alt = "";
+                        img.loading = "lazy";
+                        backImg.appendChild(img);
+                    });
+                }
+            }
+
             const titleEl = document.querySelector(".about__title");
             const locationEl = document.querySelector(".about__location");
             const priceEl = document.querySelector(".about__price");
